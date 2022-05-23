@@ -20,12 +20,17 @@
             <span onclick="play('s')">✂️</span>
         </h2>
 
-        <p>You: <span id="user-choice">⬜</span></p>
-        <p>CPU: <span id="cpu-choice">⬜</span></p>
-        <p>Result: <span id="result">none</span></p>
-        <p>Wins: <span id="win">0</span></p>
-        <p>Losses: <span id="lose">0</span></p>
-        <p>Draws: <span id="draw">0</span></p>
+        <div class="round">
+            <p>You: <span id="user-choice">⬜</span></p>
+            <p>CPU: <span id="cpu-choice">⬜</span></p>
+            <p>Result: <span id="result">None</span></p>
+        </div>
+
+        <div class="scoreboard">
+            <p>Wins: <span id="win">0</span></p>
+            <p>Losses: <span id="lose">0</span></p>
+            <p>Draws: <span id="draw">0</span></p>
+        </div>
     </section>
 
     <script src="./script.js"></script>
