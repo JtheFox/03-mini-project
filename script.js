@@ -1,6 +1,6 @@
 const rock = {
     is: 'r',
-    name: '🗿',
+    display: '🗿',
     vs: (opp) => {
         if (opp.is === 'r') return 'draw';
         else if (opp.is === 'p') return 'lose';
@@ -9,7 +9,7 @@ const rock = {
 }
 const paper = {
     is: 'p',
-    name: '📜',
+    display: '📜',
     vs: (opp) => {
         if (opp.is === 'r') return 'win';
         else if (opp.is === 'p') return 'draw';
@@ -18,7 +18,7 @@ const paper = {
 }
 const scissors = {
     is: 's',
-    name: '✂️',
+    display: '✂️',
     vs: (opp) => {
         if (opp.is === 'r') return 'lose';
         else if (opp.is === 'p') return 'win';
@@ -49,8 +49,8 @@ function play(userChoice) {
         const result = user.vs(cpu);
         score.set(result, score.get(result) + 1);
 
-        document.getElementById('user-choice').innerText = user.name;
-        document.getElementById('cpu-choice').innerText = cpu.name;
+        document.getElementById('user-choice').innerText = user.display;
+        document.getElementById('cpu-choice').innerText = cpu.display;
         document.getElementById('result').innerText = firstCaps(result);
         document.getElementById(result).innerText = score.get(result);
     }
