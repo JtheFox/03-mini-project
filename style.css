@@ -34,12 +34,15 @@ p {
     background: #c4bee7;
 }
 
+.game :is(h2, .round, .scoreboard) {
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0 0.5rem rgba(22, 23, 43, 0.5);
+}
+
 .game h2 {
     display: flex;
     align-items: center;
     text-align: center;
-    box-shadow: 0.1rem 0 0.5rem rgba(22, 23, 43, 0.5);
-    border-radius: 0.5rem;
 }
 
 h2 > span {
@@ -64,8 +67,7 @@ h2 > span:hover {
     display: flex;
     justify-content: flex-start;
     padding: 0.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0.1rem 0 0.5rem rgba(22, 23, 43, 0.5);
+    
 }
 
 .round > p {
@@ -77,8 +79,6 @@ h2 > span:hover {
     display: flex;
     flex-direction: column;
     padding: 0.3rem 1rem;
-    border-radius: 1rem;
-    box-shadow: 0.1rem 0 0.5rem rgba(22, 23, 43, 0.5);
 }
 
 .scoreboard > p {
